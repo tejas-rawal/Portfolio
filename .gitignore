@@ -26,3 +26,6 @@
 .idea
 .ruby-version
 .rspec
+
+# Ignore download vendor files
+/vendor/*
