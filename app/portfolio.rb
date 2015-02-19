@@ -4,6 +4,18 @@ require 'pry'
 
 class Portfolio < Sinatra::Base
   get '/' do
-    haml "Hello World! #{Time.now}"
+    haml :landing
+  end
+
+  get '/about' do
+    haml :about
+  end
+
+  get '/portfolio' do
+    haml :portfolio
+  end
+
+  get '/contact' do
+    haml :contact
   end
 end
