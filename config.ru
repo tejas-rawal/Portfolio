@@ -1,4 +1,5 @@
-require './config/environment'
+require 'rubygems'
+require 'bundler'
+require './app/portfolio'
 
-# run Sinatra::Application
-run Rack::URLMap.new('/' => Portfolio)
+run Portfolio
