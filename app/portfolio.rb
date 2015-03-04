@@ -2,9 +2,8 @@ require 'sinatra/base'
 require 'haml'
 require 'pry'
 
-set :app_file, File.dirname(__FILE__)
+class Portfolio < Sinatra::Application
 
-class Portfolio < Sinatra::Base
   configure do
     enable :logging
     file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
